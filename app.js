@@ -1,7 +1,9 @@
 'use strict'
 const Hapi = require('hapi');
 const server = new Hapi.Server();
-server.connection({ port: 3000, host: 'localhost' });
+server.connection({
+    port: process.env.PORT || 3000, 
+    host: process.env.HOST ||'localhost' });
 
 var rubrica = [{ nome: "pippo", professione: "cane" }, { nome: "topolino", professione: "topo" }];
 rubrica.push({ nome: "pluto", professione: "cane" });
