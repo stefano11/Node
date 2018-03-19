@@ -9,7 +9,13 @@ var rubrica = [{ nome: "pippo", professione: "cane" }, { nome: "topolino", profe
 rubrica.push({ nome: "pluto", professione: "cane" });
 console.log("Array Iniziale");
 console.log(rubrica);
-
+server.route({
+    method: 'GET',
+    path: '/',
+    handler: function (request, reply) {
+        reply('STRONZO');
+    }
+});
 server.route({
     method: 'PUT',
     path: '/api/items/{id}',
