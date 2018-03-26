@@ -13,7 +13,7 @@ server.route({
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-        reply('STRONZO');
+        reply('AAAAA');
     }
 });
 server.route({
